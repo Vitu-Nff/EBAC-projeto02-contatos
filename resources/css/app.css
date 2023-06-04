@@ -1,0 +1,101 @@
+@import "./reset.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  color: #333;
+  font-size: 0.8rem;
+}
+
+.container {
+  width: 80vw;
+  max-width: 420px;
+  margin: auto;
+  min-height: 600px;
+  padding: 34px 28px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #007aff;
+  margin-bottom: 20px;
+}
+
+hr {
+  opacity: 0.6;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#contactForm {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 20px;
+  gap: 8px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  background-color: #007aff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #006cdf;
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+table thead {
+  background-color: rgba(0, 0, 0, 0.025);
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+table th {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: normal;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #ccc;
+  transition: background-color .3s ease;
+}
+
+table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+table tbody tr:last-child {
+  border-bottom: none;
+}
+
+table tbody td {
+  vertical-align: middle;
+}
